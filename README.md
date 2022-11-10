@@ -33,6 +33,8 @@ project URL: ```https://github.com/emakefun/pxt-MP3```
 ### set the equalizer
 ![image](https://github.com/emakefun/pxt-MP3/blob/master/image/6.png)
 
+### test link 
+https://makecode.microbit.org/_buegDJ6HMMP4
 
 ## License
 
