@@ -1,0 +1,31 @@
+{
+	"MP3.playType.Play|block": "播放",
+	"MP3.playType.Pause|block": "暂停",
+	"MP3.playType.Prev|block": "上一曲",
+	"MP3.playType.Next|block": "下一曲",
+	"MP3.playType.Stop|block": "停止",
+	"MP3.playType.Add|block": "音量加",
+	"MP3.playType.Sub|block": "音量减",
+
+	"MP3.EM_PlayMode.AllLoop|block": "全盘循环",
+	"MP3.EM_PlayMode.FolderLoop|block": "文件夹循环",
+	"MP3.EM_PlayMode.SingleLoop|block": "单曲循环",
+	"MP3.EM_PlayMode.RandomLoop|block": "随机播放",
+	"MP3.EM_PlayMode.SinglePlay|block": "单曲播放",
+
+	"MP3.EM_PlayEQ.None|block": "正常",
+	"MP3.EM_PlayEQ.Pop|block": "流行",
+	"MP3.EM_PlayEQ.Rock|block": "摇滚",
+	"MP3.EM_PlayEQ.Jazz|block": "爵士",
+	"MP3.EM_PlayEQ.Classic|block": "经典",
+	"MP3.EM_PlayEQ.Bass|block": "低音",
+
+	"MP3.EM_MP3_pin_set|block": "MP3 引脚设置 | 接收数据(rx): %rx | 发送数据(tx): %tx",
+	"MP3.EM_MP3_play_control|block": "MP3 播放控制 %type",
+	"MP3.EM_MP3_assign_song|block": "MP3 播放曲目 %num",
+	"MP3.EM_MP3_play_type|block": "MP3 播放模式 %type",
+	"MP3.EM_MP3_volume_set|block": "MP3 设置音量 %vol",
+	"MP3.EM_MP3_volume_up|block": "MP3 音量+",
+	"MP3.EM_MP3_volume_down|block": "MP3 音量-",
+	"MP3.EM_MP3_eq_set|block": "MP3 设置均衡器 %eq"
+}

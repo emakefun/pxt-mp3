@@ -1,0 +1,19 @@
+{
+    "name": "MP3",
+    "version": "1.0.0",
+    "description": "play interesting sound effects with ease!",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*",
+        "radio": "*"
+    },
+    "files": [
+        "README.md",
+        "MP3.ts",
+        "_locales/zh-cn/MP3-strings.json"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": false
+}
