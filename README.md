@@ -16,22 +16,22 @@ project URL: ```https://github.com/emakefun/pxt-MP3```
 ## Blocks
 
 ### pin set
-![image](https://github.com/emakefun/pxt-MP3/blob/master/image/1.png)
+![image](./image/1.png)
 
 ### play control
-![image](https://github.com/emakefun/pxt-MP3/blob/master/image/2.png)
+![image](./image/2.png)
 
 ### play songs
-![image](https://github.com/emakefun/pxt-MP3/blob/master/image/3.png)
+![image](./image/3.png)
 
 ### play mode
-![image](https://github.com/emakefun/pxt-MP3/blob/master/image/4.png)
+![image](./image/4.png)
 
 ### volume control
-![image](https://github.com/emakefun/pxt-MP3/blob/master/image/5.png)
+![image](./image/5.png)
 
 ### set the equalizer
-![image](https://github.com/emakefun/pxt-MP3/blob/master/image/6.png)
+![image](./image/6.png)
 
 ### test link 
 https://makecode.microbit.org/_buegDJ6HMMP4
