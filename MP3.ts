@@ -116,6 +116,29 @@ namespace MP3 {
 
     /**
      * Disconnect the serial port.
+     * @param num to num ,eg: 001
+    */
+    //% weight=80
+    //% blockGap=20
+    //% blockId="MP3_assign_song"
+    //% block="MP3 play name %name"
+    export function EM_MP3_assign_song_name(name: number): void {
+        name = name < 1 ? 1 : (name > 65535 ? 65535 : name)
+        let buffer = pins.createBuffer(6);
+        let num_h = (name>>8) & 0xFF
+        let num_l = name & 0xFF
+
+        buffer.setNumber(NumberFormat.UInt8BE, 0, 0x7e)
+        buffer.setNumber(NumberFormat.UInt8BE, 1, 0x04)
+        buffer.setNumber(NumberFormat.UInt8BE, 2, 0x49)
+        buffer.setNumber(NumberFormat.UInt8BE, 3, num_h)
+        buffer.setNumber(NumberFormat.UInt8BE, 4, num_l)
+        buffer.setNumber(NumberFormat.UInt8BE, 5, 0xef)
+        serial.writeBuffer(buffer)
+    } 
+
+    /**
+     * Disconnect the serial port.
      * @param type to type ,eg: EM_PlayMode.AllLoop
     */
     //% weight=70
