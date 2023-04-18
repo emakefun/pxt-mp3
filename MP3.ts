@@ -118,11 +118,11 @@ namespace MP3 {
      * Disconnect the serial port.
      * @param name to name ,eg: 001
     */
-    //% weight=80
+    //% weight=81
     //% blockGap=20
-    //% blockId="EM_MP3_assign_song_name"
+    //% blockId="EM_MP3_play_song_name"
     //% block="MP3 play name %name"
-    export function EM_MP3_assign_song_name(name: number): void {
+    export function EM_MP3_play_song_name(name: number): void {
         name = name < 1 ? 1 : (name > 65535 ? 65535 : name)
         let buffer = pins.createBuffer(6);
         let num_h = (name>>8) & 0xFF
