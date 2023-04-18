@@ -116,11 +116,11 @@ namespace MP3 {
 
     /**
      * Disconnect the serial port.
-     * @param num to num ,eg: 001
+     * @param name to name ,eg: 001
     */
     //% weight=80
     //% blockGap=20
-    //% blockId="MP3_assign_song"
+    //% blockId="EM_MP3_assign_song_name"
     //% block="MP3 play name %name"
     export function EM_MP3_assign_song_name(name: number): void {
         name = name < 1 ? 1 : (name > 65535 ? 65535 : name)
