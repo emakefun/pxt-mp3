@@ -22,7 +22,7 @@
 
 	"MP3.EM_MP3_pin_set|block": "MP3 引脚设置 | 接收数据(rx): %rx | 发送数据(tx): %tx",
 	"MP3.EM_MP3_play_control|block": "MP3 播放控制 %type",
-	"MP3.EM_MP3_assign_song|block": "MP3 播放曲目 %num",
+	"MP3.EM_MP3_assign_song|block": "MP3 播放曲目(按存放顺序) %num",
 	"MP3.EM_MP3_play_song_name|block": "MP3 播放曲目名称为 %name",
 	"MP3.EM_MP3_play_type|block": "MP3 播放模式 %type",
 	"MP3.EM_MP3_volume_set|block": "MP3 设置音量 %vol",
