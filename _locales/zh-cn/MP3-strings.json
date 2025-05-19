@@ -1,11 +1,11 @@
 {
-	"MP3.playType.Play|block": "播放",
-	"MP3.playType.Pause|block": "暂停",
-	"MP3.playType.Prev|block": "上一曲",
-	"MP3.playType.Next|block": "下一曲",
-	"MP3.playType.Stop|block": "停止",
-	"MP3.playType.Add|block": "音量加",
-	"MP3.playType.Sub|block": "音量减",
+	"MP3.EM_PlayControl.Play|block": "播放",
+	"MP3.EM_PlayControl.Pause|block": "暂停",
+	"MP3.EM_PlayControl.Prev|block": "上一曲",
+	"MP3.EM_PlayControl.Next|block": "下一曲",
+	"MP3.EM_PlayControl.Stop|block": "停止",
+	"MP3.EM_PlayControl.Add|block": "音量加",
+	"MP3.EM_PlayControl.Sub|block": "音量减",
 
 	"MP3.EM_PlayMode.AllLoop|block": "全盘循环",
 	"MP3.EM_PlayMode.FolderLoop|block": "文件夹循环",
