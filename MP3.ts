@@ -4,7 +4,7 @@
 //% weight=10 color=#7fcbcd icon="\uf001" block="MP3"
 namespace MP3 {
 
-    export enum playType {
+    export enum EM_PlayControl {
         //% block="Play"
         Play = 0x01,
         //% block="Pause"
@@ -73,19 +73,19 @@ namespace MP3 {
 
     /**
      * Disconnect the serial port.
-     * @param type to type ,eg: playType.Play
+     * @param type to type ,eg: MP3.EM_PlayControl.Play
     */
     //% weight=90
     //% type.fieldEditor="gridpicker" type.fieldOptions.columns=1
     //% blockId="MP3_play_control"
     //% blockGap=20
-    //% block="MP3 play control %type"
+    //% block="MP3 play control %control"
     //% blockExternalInputs=true
-    export function EM_MP3_play_control(type: playType): void {
+    export function EM_MP3_play_control(control: EM_PlayControl): void {
         let buffer = pins.createBuffer(4);
         buffer.setNumber(NumberFormat.UInt8BE, 0, 0x7e)
         buffer.setNumber(NumberFormat.UInt8BE, 1, 0x02)
-        buffer.setNumber(NumberFormat.UInt8BE, 2, type)
+        buffer.setNumber(NumberFormat.UInt8BE, 2, control)
         buffer.setNumber(NumberFormat.UInt8BE, 3, 0xef)
         serial.writeBuffer(buffer)
     } 
@@ -139,19 +139,19 @@ namespace MP3 {
 
     /**
      * Disconnect the serial port.
-     * @param type to type ,eg: EM_PlayMode.AllLoop
+     * @param type to type ,eg: MP3.EM_PlayMode.AllLoop
     */
     //% weight=70
     //% type.fieldEditor="gridpicker" type.fieldOptions.columns=1
     //% blockGap=20
-    //% blockId="MP3_play_type"
-    //% block="MP3 play type %type"
-    export function EM_MP3_play_type(type: EM_PlayMode): void {
+    //% blockId="MP3_play_mode"
+    //% block="MP3 play mode %mode"
+    export function EM_MP3_play_mode(mode: EM_PlayMode): void {
         let buffer = pins.createBuffer(5);
         buffer.setNumber(NumberFormat.UInt8BE, 0, 0x7e)
         buffer.setNumber(NumberFormat.UInt8BE, 1, 0x03)
         buffer.setNumber(NumberFormat.UInt8BE, 2, 0x33)
-        buffer.setNumber(NumberFormat.UInt8BE, 3, <number>type)
+        buffer.setNumber(NumberFormat.UInt8BE, 3, mode)
         buffer.setNumber(NumberFormat.UInt8BE, 4, 0xef)
         serial.writeBuffer(buffer)
     } 
@@ -181,7 +181,7 @@ namespace MP3 {
     
     /**
      * Disconnect the serial port.
-     * @param eq to eq ,eg: EM_PlayEQ.None
+     * @param eq to eq ,eg: MP3.EM_PlayEQ.None
     */
     //% weight=30
     //% eq.fieldEditor="gridpicker" eq.fieldOptions.columns=1
@@ -193,7 +193,7 @@ namespace MP3 {
         buffer.setNumber(NumberFormat.UInt8BE, 0, 0x7e)
         buffer.setNumber(NumberFormat.UInt8BE, 1, 0x03)
         buffer.setNumber(NumberFormat.UInt8BE, 2, 0x32)
-        buffer.setNumber(NumberFormat.UInt8BE, 3, <number>eq)
+        buffer.setNumber(NumberFormat.UInt8BE, 3, eq)
         buffer.setNumber(NumberFormat.UInt8BE, 4, 0xef)
         serial.writeBuffer(buffer)
     } 
